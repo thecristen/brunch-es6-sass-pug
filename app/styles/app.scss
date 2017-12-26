@@ -1,9 +1,17 @@
-body {
-  margin: 0;
+@import 'system-font.scss';
+
+$theme: custom;
+$custom-font-body: system-ui, "Segoe UI", Tahoma, sans-serif !default;
+$custom-font-headings: system-ui, "Segoe UI", Tahoma, sans-serif !default;
+$line-height: 1.1;
+$line-height-desktop: 1.25;
+@import 'src/style/gutenberg.scss';
+
+hr {
+  @include margin-bottom(1.25);
+  @include margin-top(1.25); 
 }
-canvas {
-  position:fixed; top:0; left:0; z-index:1;
-}
-#app {
-  position:relative; z-index:2;
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
