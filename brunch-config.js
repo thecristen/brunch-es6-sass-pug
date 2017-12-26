@@ -25,7 +25,13 @@ module.exports = {
       }
     },
     sass: {
-      mode: 'native'
+      mode: 'native',
+      options: {
+        includePaths: [
+          'node_modules/system-font-css',
+          'node_modules/gutenberg-web-type',
+        ],
+      },
     },
     pug: {
       pretty: true,
