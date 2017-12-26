@@ -3,13 +3,16 @@ html(lang='en')
   head
     meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
-    meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
-    // WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323
-    meta(name='viewport', content='user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi')
-    title AP5
-    link(rel='stylesheet', href='/css/app.css')
-    script(src='/js/vendor.js')
-    script(src='/js/app.js')
+    meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi')
+    title Page title
+    meta(http-equiv='Content-Security-Policy' content="default-src 'self'")
+    meta(name='description' content='Page description')
+    meta(name='subject' content='Page subject')
+    meta(name='rating' content='General')
+    meta(name='robots' content='index,follow') 
+    link(rel='stylesheet', href='./css/app.css')
+    script(src='./js/vendor.js')
+    script(src='./js/app.js')
     script.
       require('initialize')
   body
