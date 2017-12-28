@@ -1,19 +1,60 @@
-doctype html
-html(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
-    meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi')
-    title Page title
-    meta(http-equiv='Content-Security-Policy' content="default-src 'self'")
-    meta(name='description' content='Page description')
-    meta(name='subject' content='Page subject')
-    meta(name='rating' content='General')
-    meta(name='robots' content='index,follow') 
-    link(rel='stylesheet', href='./css/app.css')
-    script(src='./js/vendor.js')
-    script(src='./js/app.js')
-    script.
-      require('initialize')
-  body
-    #app
+extends layout.pug
+
+block content
+  h2 Ergo opifex plus sibi proponet ad formarum quam civis excellens ad factorum pulchritudinem?
+
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Voluptatem cum summum bonum diceret, primum in eo ipso parum vidit, deinde hoc quoque alienum; Mihi enim erit isdem istis fortasse iam utendum. Sit hoc ultimum bonorum, quod nunc a me defenditur; Quo invento omnis ab eo quasi capite de summo bono et malo disputatio ducitur. #[mark Quae contraria sunt his, malane?] Duo Reges: constructio interrete. Sin eam, quam Hieronymus, ne fecisset idem, ut voluptatem illam Aristippi in prima commendatione poneret. #[mark Recte, inquit, intellegis]. #[strong Hoc non est positum in nostra actione].
+
+  h3 Quid iudicant sensus?
+  
+  p Aliam vero vim voluptatis esse, aliam nihil dolendi, nisi valde pertinax fueris, concedas necesse est. His enim rebus detractis negat se reperire in asotorum vita quod reprehendat. Vitiosum est enim in dividendo partem in genere numerare. #[code Quae sequuntur igitur?] Ad corpus diceres pertinere-, sed ea, quae dixi, ad corpusne refers? Nihil sane. #[strong Hic nihil fuit, quod quaereremus]. Atque ut a corpore ordiar, videsne ut, si quae in membris prava aut debilitata aut inminuta sint, occultent homines? #[strongAt certe gravius]. #[em Summus dolor plures dies manere non potest?] Hoc dixerit potius Ennius: Nimium boni est, cui nihil est mali.
+  
+  
+  
+  h4 Qui enim existimabit posse se miserum esse beatus non erit.
+  
+  p #[a(href='http://loripsum.net/', target='_blank') Satis est ad hoc responsum]. #[a(href='http://loripsum.net/', target='_blank') Tibi hoc incredibile, quod beatissimum]. Manebit ergo amicitia tam diu, quam diu sequetur utilitas, et, si utilitas amicitiam constituet, tollet eadem. Et certamen honestum et disputatio splendida! omnis est enim de virtutis dignitate contentio. #[a(href='http://loripsum.net/', target='_blank') Egone quaeris, inquit, quid sentiam?] #[em Ut pulsi recurrant?] Tum mihi Piso: Quid ergo? Atqui, inquit, si Stoicis concedis ut virtus sola, si adsit vitam efficiat beatam, concedis etiam Peripateticis. Estne, quaeso, inquam, sitienti in bibendo voluptas? Omnia contraria, quos etiam insanos esse vultis. Quod autem principium officii quaerunt, melius quam Pyrrho; Et si turpitudinem fugimus in statu et motu corporis, quid est cur pulchritudinem non sequamur? Idem iste, inquam, de voluptate quid sentit? #[em Certe, nisi voluptatem tanti aestimaretis.] Quid enim de amicitia statueris utilitatis causa expetenda vides.
+  
+  ol
+    li Audax negotium, dicerem impudens, nisi hoc institutum postea translatum ad philosophos nostros esset.
+    li Haec et tu ita posuisti, et verba vestra sunt.
+    li Quam illa ardentis amores excitaret sui! Cur tandem?
+    li -delector enim, quamquam te non possum, ut ais, corrumpere, delector, inquam, et familia vestra et nomine.
+    
+  p Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Et quidem Arcesilas tuus, etsi fuit in disserendo pertinacior, tamen noster fuit; Amicitiae vero locus ubi esse potest aut quis amicus esse cuiquam, quem non ipsum amet propter ipsum?
+  
+  dl
+    dt #[dfn Si longus, levis].
+    dd Non risu potius quam oratione eiciendum?
+    dt #[dfn Quo modo?]
+    dd Tu autem, si tibi illa probabantur, cur non propriis  verbis ea tenebas?
+    dt #[dfn Quid iudicant sensus?]
+    dd Quae in controversiam veniunt, de iis, si placet,  isseramus.
+    dt #[dfn Scrupulum, inquam, abeunti;]
+    dd Quae iam oratio non a philosopho aliquo, sed a  ensore opprimenda est.
+    
+  p Quis est enim, in quo sit cupiditas, quin recte cupidus dici possit? Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Et quidem Arcesilas tuus, etsi fuit in disserendo pertinacior, tamen noster fuit; Amicitiae vero locus ubi esse potest aut quis amicus esse cuiquam, quem non ipsum amet propter ipsum?
+
+  blockquote(cite='http://loripsum.net') Quid censes eos esse facturos, qui omnino virtutem a bonorum fine segregaverunt, Epicurum, Hieronymum, illos etiam, si qui Carneadeum finem tueri volunt?
+  
+  p Nam aliquando posse recte fieri dicunt nulla expectata nec quaesita voluptate. Hoc autem tempore, etsi multa in omni parte Athenarum sunt in ipsis locis indicia summorum virorum, tamen ego illa moveor exhedra. At enim iam dicitis virtutem non posse constitui, si ea, quae extra virtutem sint, ad beate vivendum pertineant. Hoc dictum in una re latissime patet, ut in omnibus factis re, non teste moveamur. Sin est etiam corpus, ista explanatio naturae nempe hoc effecerit, ut ea, quae ante explanationem tenebamus, relinquamus. 
+  
+  pre
+    code.
+      function $initHighlight(block, cls) {
+        try {
+          if (cls.search(/\bno\-highlight\b/) != -1)
+            return process(block, true, 0x0F) +
+                   ` class="${cls}"`;
+        } catch (e) {
+          /* handle exception */
+        }
+        for (var i = 0 / 2; i < classes.length; i++) {
+          if (checkCondition(classes[i]) === undefined)
+            console.log('undefined');
+        }
+      }
+
+      export  $initHighlight;
+      
+  p Nam aliquando posse recte fieri dicunt nulla expectata nec quaesita voluptate. Hoc autem tempore, etsi multa in omni parte Athenarum sunt in ipsis locis indicia summorum virorum, tamen ego illa moveor exhedra. At enim iam dicitis virtutem non posse constitui, si ea, quae extra virtutem sint, ad beate vivendum pertineant. Hoc dictum in una re latissime patet, ut in omnibus factis re, non teste moveamur. Sin est etiam corpus, ista explanatio naturae nempe hoc effecerit, ut ea, quae ante explanationem tenebamus, relinquamus. 

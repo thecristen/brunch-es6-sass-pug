@@ -1,17 +1,41 @@
 @import 'system-font.scss';
-
-$theme: custom;
-$custom-font-body: system-ui, "Segoe UI", Tahoma, sans-serif !default;
-$custom-font-headings: system-ui, "Segoe UI", Tahoma, sans-serif !default;
-$line-height: 1.1;
-$line-height-desktop: 1.25;
-@import 'src/style/gutenberg.scss';
-
-hr {
-  @include margin-bottom(1.25);
-  @include margin-top(1.25); 
-}
+@import 'ibm-colors';
+@import 'gutenberg-custom';
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+  color: color('gold', 40);
+  font-weight: 300;
+}
+
+code, kbd, pre, samp {
+  font-family: 'Anonymous Pro', monospace;
+}
+
+$color-link-normal: color('indigo', 50);
+$color-link-hover: color('indigo', 70);
+$color-link-active: color('indigo', 90);
+$color-link-visited: color('indigo', 30);
+
+a {
+  color: $color-link-normal;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+
+  &:visited {
+    color: $color-link-visited;
+
+    &:hover {
+      color: $color-link-hover;
+    }
+  }
+
+  &:active {
+    color: $color-link-active;
+  }
+}
+
+footer {
+  @include padding(0, 0, 2, 0);
 }

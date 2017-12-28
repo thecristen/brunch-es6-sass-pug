@@ -1,0 +1,27 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=Edge,chrome=1')
+    meta(name='viewport', content='shrink-to-fit=no, initial-scale=1.0, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi')
+    title Site title
+    meta(name='description', content='Page description')
+    meta(name='subject', content='Page subject')
+    meta(name='rating', content='General')
+    meta(name='robots', content='index,follow') 
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anonymous+Pro')
+    link(rel='stylesheet', href='./css/app.css')
+    link(rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/tomorrow-night-blue.min.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js')
+    script(src='./js/vendor.js')
+    script(src='./js/app.js')
+    script.
+      require('initialize')
+  body
+    h1 Brunch Pretty Pug
+    hr
+    main
+      block content
+    hr
+    footer &copy; 
+      = new Date().getFullYear()

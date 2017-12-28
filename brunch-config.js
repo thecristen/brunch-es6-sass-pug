@@ -19,27 +19,28 @@ module.exports = {
     },
     autoReload: {
       match: {
-        stylesheets: ['*.css', '*.jpg', '*.png'],
+        stylesheets: ['*.css', '*.jpg', '*.png', '*.scss'],
         javascripts: ['*.js'],
         templates: ['*.pug']
-      }
+      },
     },
     sass: {
       mode: 'native',
       options: {
         includePaths: [
           'node_modules/system-font-css',
-          'node_modules/gutenberg-web-type',
+          'node_modules/gutenberg-web-type/src/style',
+          'node_modules/ibm-design-colors',
         ],
       },
     },
     pug: {
       pretty: true,
-      preCompile: true,
       locals: {
         appName: 'My App'
       },
-      globals: ['App']
+      globals: ['App'],
+      pugRuntime: require('path').resolve('.', 'vendor', 'pug_runtime.js')
     }
   }
 }

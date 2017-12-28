@@ -1,10 +1,22 @@
 # Brunch + Babel/ES6 + Sass + Pug
 
-This is a modern JS skeleton for [Brunch](http://brunch.io).
+This is a skeleton for [Brunch](http://brunch.io) for a one-page static website (you could of course add more pages if you'd like). Warning: slightly opinionated!
+
+## Features
+
+* Babel/ES6 - write that modern JavaScript!
+* Pug - use its templating and forget writing tedious HTML tags.
+* Sass
+* Auto-reload
+
+### Opinionated things
+* System fonts (San Francisco on MacOS, Segoe UI on Windows 10, etc.)
+* Gutenberg for more typography Features
+* IBM Design color palette
 
 ## Installation
 
-Clone this repo
+Clone this repo (TODO: add to Brunch's skeleton list)
 
 ## Getting started
 

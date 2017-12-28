@@ -20,9 +20,10 @@
     "css-brunch": "^2.0.0",
     "gutenberg-web-type": "^1.2.3",
     "javascript-brunch": "^2.0.0",
-    "pugjs-brunch": "^2.8.5",
-    "sass-brunch": "^2.9.0",
+    "pugjs-brunch": "amarcruz/pugjs-brunch",
     "system-font-css": "^2.0.1",
-    "uglify-js-brunch": "^2.0.0"
+    "uglify-js-brunch": "^2.0.0",
+    "sass-brunch": "brunch/sass-brunch#2d4709",
+    "ibm-design-colors": "^2.0.4"
   }
 }
